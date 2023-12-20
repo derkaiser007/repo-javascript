@@ -1,0 +1,62 @@
+In console:
+
+console.log(window)
+console.log(window.document)
+console.log(document)
+console.dir(document)
+console.log()
+document.getElementById('firstHeading').innerHTML="<h1>Niraj</h1>"
+
+One.html:
+In console:
+document.getElementById('b')
+document.getElementById('b').className
+document.getElementById('a').getAttribute('id')
+document.getElementById('b').getAttribute('class')
+document.getElementById('b').setAttribute('class','xxx')
+document.getElementById('b').setAttribute('class','ppp xxx')
+document.getElementByClassname('rrr')
+b.style.color = 'green'
+g.style.backgroundColor = 'red'
+const title = document.getElementById('b')
+title.style.color = 'red'
+title.style.backgroundColor = 'gray'
+title.style.borderRadius = '15px'
+title.innerText
+title.textContent
+title.innerHTML
+document.querySelector('h1')
+document.querySelectorAll('h1')
+document.querySelector('#a')
+document.querySelector('.ppp')
+document.querySelector('input[type="password"]')
+document.querySelector('ul')
+document.querySelector('li')
+document.querySelectorAll('li')
+document.querySelector('li').style.color = 'red'
+const myul = document.querySelector('ul')
+myul.querySelector('li').style.backgroundColor = 'green'
+const first_li = document.querySelector('li')
+first_li.innerHTML = 'Five'
+first_li.style.color = 'green'
+const li_list = document.querySelectorAll('li')
+li_list.style.color = 'green'
+li_list[0].style.color = 'green'
+li_list.forEach(function(l){
+    l.style.color = 'green'
+})
+const h1_list = document.querySelectorAll('h1')
+h1_list[0].style.color = 'green'
+document.getElementsByClassName('rrr')
+const li_list = document.getElementsByClassName('rrr')
+Array.from(li_list)
+const li_list_arr = Array.from(li_list)
+li_list_arr.map((i) => i.style.color = 'green')
+
+On Virat Kohli Wikipedia Page:
+document.querySelectorAll('h2')
+const h2_list = document.querySelectorAll('h2')
+h2_list.forEach(function(i){
+    i.style.color = 'green'
+    i.style.backgroundColor = 'black'
+})

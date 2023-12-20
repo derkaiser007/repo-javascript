@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body>
+    <h1>Niraj</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setInterval(function(){
+    //     console.log("Come On!")
+    // }, 2000)
+
+    // const comeOn = function(){
+    //     console.log("Come On!")
+    // }
+    // setInterval(comeOn, 2000)
+
+    // const comeOn = function(str){
+    //     console.log(str)
+    // }
+    // setInterval(comeOn, 2000, "Come On!")
+
+    // const comeOn = function(){
+    //     console.log("Come On!")
+    // }
+    // const stopIt = setInterval(comeOn, 2000)
+    // clearInterval(stopIt)
+
+    //Project
+    let invalidId
+    function startIt() {
+    intervalId = setInterval(function() {
+        console.log("Niraj");
+    }, 2000);
+    }
+    document.querySelector('#start').addEventListener('click', startIt);
+    document.querySelector('#stop').addEventListener('click', function() {
+        clearInterval(intervalId);
+    });
+ 
+</script>
+</html>
