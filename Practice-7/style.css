@@ -1,0 +1,52 @@
+body {
+    background-color: #212121;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+.gallery {
+    width: 565px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gallery div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 10px auto;
+    flex: none;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery div img {
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+
+.gallery div img:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.move-left, .move-right {
+    color: aliceblue;
+    background-color: #212121;
+    border-color: aquamarine;
+    font-size: xx-large;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.move-left:hover, .move-right:hover {
+    color: crimson;
+}

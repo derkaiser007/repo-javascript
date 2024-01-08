@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">
+        <p id="1" style="display: none; border: 1px dotted;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti autem quia hic. Ex, accusantium non.</p>
+        <p id="2" style="display: none; border: 1px dotted;">In, aperiam cupiditate autem voluptas porro reprehenderit qui libero est suscipit officiis illo sequi quia!</p>
+        <p id="3" style="display: none; border: 1px dotted;">Laboriosam autem suscipit error placeat ipsam ut, cum maiores dicta perspiciatis soluta blanditiis eius sit.</p>
+        <p id="4" style="display: none; border: 1px dotted;">Beatae officiis dolores possimus illo iste? Eaque nulla repellat quidem animi aliquid quo, modi magni?</p>
+        <p id="5" style="display: none; border: 1px dotted;">In vitae harum incidunt sed, quibusdam voluptatem, ea ipsum quas architecto cupiditate, laboriosam illum consequatur.</p>
+    </div>
+</body>
+<script>
+    let i = 0
+    setInterval(function(){
+        i += 1
+        let element_n = document.getElementById(i)
+        let element_p = document.getElementById(i - 1) 
+        if(element_n){
+            element_n.style.display = 'block'
+            if(element_p){
+                element_p.style.display = 'none'
+            }
+        } else if(element_p){
+                element_p.style.display = 'none'
+                i = 1
+                element_n = document.getElementById(i)
+                element_n.style.display = 'block'
+        }
+    }, 1000)
+</script>
+</html>

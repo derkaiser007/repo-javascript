@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="submit" type="submit">Submit</button>
+    <div class="pop-up">
+        <img src="tick.jpg" width="50px" height="50px">
+        <h1>Thank You</h1>
+        <h3>Form is sucessfully submitted.</h3>
+        <button class="ok" type="submit">OK</button>
+    </div>
+</body>
+<script>
+    const submitButton = document.querySelector('.submit')
+    const okButton = document.querySelector('.ok')
+    const popUp = document.querySelector('.pop-up')
+
+    submitButton.addEventListener('click', (e) => {
+        e.preventDefault()
+        submitButton.style.display = 'none';
+        popUp.style.display = 'block';
+    })
+
+    okButton.addEventListener('click', (e) => {
+        e.preventDefault()
+        popUp.style.display = 'none';
+        submitButton.style.display = 'block';
+    })
+</script>
+</html>

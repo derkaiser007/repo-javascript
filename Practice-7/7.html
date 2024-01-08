@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="move-left">&#10232;</button>
+        <div class="gallery">
+        <div>
+            <span><img src="images/image-1.jpeg" height="350px" width="175px"></span>
+            <span><img src="images/image-2.jpeg" height="350px" width="175px"></span>
+            <span><img src="images/image-3.jpeg" height="350px" width="175px"></span>
+        </div>
+        <div>
+            <span><img src="images/image-4.jpeg" height="350px" width="175px"></span>
+            <span><img src="images/image-5.jpeg" height="350px" width="175px"></span>
+            <span><img src="images/image-6.jpeg" height="350px" width="175px"></span>
+        </div>
+        </div>
+        <button class="move-right">&#10233;</button>
+    </div>    
+</body>
+<script>
+    const scrollContainer = document.querySelector('.gallery')
+    const backBtn = document.querySelector('.move-left')
+    const nextBtn = document.querySelector('.move-right')
+
+    scrollContainer.addEventListener('wheel', (e) => {
+        e.preventDefault()
+        scrollContainer.scrollLeft += e.deltaY;
+        scrollContainer.style.scrollBehavior = 'auto';
+    })
+
+    backBtn.addEventListener('click', (e) => {
+        e.preventDefault()
+        scrollContainer.style.scrollBehavior = 'smooth';
+        scrollContainer.scrollLeft += 575;
+    })
+
+    nextBtn.addEventListener('click', (e) => {
+        e.preventDefault()
+        scrollContainer.style.scrollBehavior = 'smooth';
+        scrollContainer.scrollLeft -= 575;
+    })
+</script>
+</html>

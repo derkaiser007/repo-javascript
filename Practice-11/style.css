@@ -1,0 +1,23 @@
+.container {
+    overflow: hidden;
+    width: 100%; 
+    height: 50px; 
+    border: 1px solid black; 
+}
+  
+.moving-list {
+    display: flex;
+    list-style: none;
+    animation: move-items 20s linear infinite;
+}
+  
+@keyframes move-items {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-180%); } /* It can be varied as per the length of the list items */
+}
+
+.moving-list li {
+    width: 100%; 
+    height: 100%;   
+    white-space: nowrap;
+}

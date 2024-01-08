@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.644); color: white;">
+    <button id="shrink">Shrink Article</button>
+    <button id="expand">Expand Article</button>
+    <p id="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti autem quia hic. Ex, accusantium non.</p>
+    <p id="2">In, aperiam cupiditate autem voluptas porro reprehenderit qui libero est suscipit officiis illo sequi quia!</p>
+    <p id="3">Laboriosam autem suscipit error placeat ipsam ut, cum maiores dicta perspiciatis soluta blanditiis eius sit.</p>
+    <p id="4">Beatae officiis dolores possimus illo iste? Eaque nulla repellat quidem animi aliquid quo, modi magni?</p>
+    <p id="5">In vitae harum incidunt sed, quibusdam voluptatem, ea ipsum quas architecto cupiditate, laboriosam illum consequatur.</p>
+</body>
+<script>
+    let i = 1
+    document.getElementById('shrink').addEventListener('click', function(){
+        let element = document.getElementById(i)
+        if(element){
+            element.style.display = 'none'
+            i += 1
+            console.log(i-1)
+        }
+    })
+    document.getElementById('expand').addEventListener('click', function(){
+        i -= 1
+        let element = document.getElementById(i)
+        if(element){
+            element.style.display = 'block'
+            console.log(i)
+        } else if(i <= 0){
+            i = 1
+        }
+    })
+</script>
+</html>

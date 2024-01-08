@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+<img id="dashboard" src="Screenshot.png" alt="dashboard" usemap="#workmap" width="250" height="200">
+
+<map name="workmap">
+  <area id="beach" shape="rect" coords="184,97,236,129" alt="beach" href="Beach.jpeg">
+  <area id="sea" shape="rect" coords="26,98,73,130" alt="sea" href="https://www.youtube.com/watch?v=yhB3BgJyGl8">
+  <area class="jungle" shape="rect" coords="102,151,154,181" alt="jungle" href="jungle.html">
+  <area shape="rect" coords="104,39,151,69" alt="mountain" href="mountain.html">
+</map>   
+</body>
+<script>
+  document.getElementById('dashboard').addEventListener('click', function(e){
+    console.log('X:', e.clientX, ',', 'Y:', e.clientY)
+  }) 
+</script>
+</html>

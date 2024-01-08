@@ -1,0 +1,23 @@
+#body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "a b c d e"
+    "f g h i j"
+    "k l m n o";
+    gap: 0.5rem;
+}
+
+#dashboard {
+    grid-area: h;
+}
+
+#mountain {
+    grid-area: c;
+    border-radius: 0.5rem;
+}
+
+/* 20,23,252,199 */
+

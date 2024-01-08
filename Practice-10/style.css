@@ -1,0 +1,35 @@
+body {
+    font-size: 2rem;
+    height: 2000px;
+}
+
+.parent {
+    height: 400px;
+    width: 750px;
+    background-color: aquamarine;
+    margin: 7rem;
+    position: relative;        
+}
+
+.child-1 {
+    background-color: burlywood;
+    position: fixed;
+    left: 0;
+    top: 8rem;
+}
+
+.child-2 {
+    background-color: coral;
+    position: sticky;
+    top: 150px;
+}
+
+.child-3 {
+    background-color: aqua;
+    position: absolute;
+    right: 0;
+}
+
+.child-4 {
+    background-color: lightslategrey;
+}

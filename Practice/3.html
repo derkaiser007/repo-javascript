@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+    <div id="myDiv">
+        <p id="1" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti autem quia hic. Ex, accusantium non.</p>
+        <p id="2" style="display: none;">In, aperiam cupiditate autem voluptas porro reprehenderit qui libero est suscipit officiis illo sequi quia!</p>
+        <p id="3" style="display: none;">Laboriosam autem suscipit error placeat ipsam ut, cum maiores dicta perspiciatis soluta blanditiis eius sit.</p>
+        <p id="4" style="display: none;">Beatae officiis dolores possimus illo iste? Eaque nulla repellat quidem animi aliquid quo, modi magni?</p>
+        <p id="5" style="display: none;">In vitae harum incidunt sed, quibusdam voluptatem, ea ipsum quas architecto cupiditate, laboriosam illum consequatur.</p>
+    </div>
+</body>
+<script>
+    let i = 1
+    document.getElementById('next').addEventListener('click', function(){
+        let element_n = document.getElementById(i)
+        let element_p = document.getElementById(i-1)
+        if(element_n){
+            element_n.style.display = 'block'
+            i += 1
+            console.log(i-1)
+            if(element_p){
+                element_p.style.display = 'none'
+            }
+        }
+    })
+    document.getElementById('prev').addEventListener('click', function(){
+        i -= 1
+        let element_n = document.getElementById(i)
+        let element_p = document.getElementById(i-1)
+        if(element_p){
+            element_p.style.display = 'block'
+            console.log(i-1)
+            if(element_n){
+                element_n.style.display = 'none'
+            }
+        } else if(i <= 1){
+            i = 2
+        }
+    })
+</script>
+</html>

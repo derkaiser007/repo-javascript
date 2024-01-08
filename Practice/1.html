@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.621); color: white;">
+    <button id="skip">Skip Summary</button>
+    <button id="show">Show Summary</button>
+    <p id="summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam alias amet dolor illum earum perferendis.</p>
+</body>
+<script>
+    document.getElementById('skip').addEventListener('click', function(){
+        document.getElementById('summary').style.display = 'none'
+    })
+    document.getElementById('show').addEventListener('click', function(){
+        document.getElementById('summary').style.display = 'block'
+    })
+</script>
+</html>
