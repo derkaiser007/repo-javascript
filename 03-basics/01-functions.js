@@ -1,4 +1,4 @@
-// node 01-functions.js
+// node 03-basics/01-functions.js
 
 function sayMyName(){
     console.log("H");
@@ -33,22 +33,16 @@ function calculateCartPrice(val1, val2, ...num1){
     return num1
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000, 10000))
+// console.log(calculateCartPrice(200, 400, 500, 2000, 10000)) // [ 500, 2000, 10000 ]
 
 function handleObject(anyobject){
     console.log(`Username is ${anyobject.username} and price is $${anyobject.price}.`);
 }
 
-// const user = {
-//     username: "hitesh",
-//     price: 199
-// }
+// const user = {username: "hitesh", price: 199}
 // handleObject(user)
 
-// handleObject({
-//     username: "sam",
-//     price: 399
-// })
+// handleObject({username: "sam", price: 399})
 
 function returnSecondValue(getArray){
     return getArray[1]

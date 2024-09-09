@@ -1,15 +1,16 @@
-// node 06-nums_and_maths.js
+// node 01-basics/06-nums_and_maths.js
 
-const score = 400
+const score = 400 // number primitive datatype
 // console.log(score);
 
-const balance = new Number(100)
+const balance = new Number(100) //number object
 // console.log(balance);
+// console.log(balance.toString());
 // console.log(balance.toString().length);
 // console.log(balance.toFixed(5));
 
 const otherNumber = 123.89665647
-// console.log(otherNumber.toPrecision(6));
+// console.log(otherNumber.toPrecision(5)); // 123.90
 
 const hundreds = 1000000
 // console.log(hundreds.toLocaleString());
@@ -31,4 +32,4 @@ const hundreds = 1000000
 
 const min = 10
 const max = 20
-// console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+// console.log(Math.floor(Math.random() * (max - min + 1)) + min) // gives random number between 10(in) and 20(ex)

@@ -1,7 +1,6 @@
-//node 05-iterations\five
+// node 05-iterations\five.js
 
 //For each
-
 // let myArr = ['niraj', 'samay', 'vivek', 'naman', 'vinamra']
 
 // myArr.forEach(function(item){
@@ -21,7 +20,6 @@
 //     return item
 // })
 // console.log(myArrInfo)
-
 
 
 // const user = [

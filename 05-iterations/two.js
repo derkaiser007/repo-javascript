@@ -1,6 +1,7 @@
-//node 05-iterations\two
+// node 05-iterations\two
 
 //While
+
 // let i = 0
 // while(i < 10) {
 //     console.log(i)
@@ -19,8 +20,9 @@
 
 
 //Do While
+
 // let i = 0
-// do{
+// do {
 //     console.log(i)
 //     i++
 // } while (i < 10)

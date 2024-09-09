@@ -1,4 +1,6 @@
-//node 05-iterations\six
+// node 05-iterations\six
+
+
 
 //For Each Loop
 // const user = ['niraj', 'suraj', 'vivek', 'samar']
@@ -11,6 +13,8 @@
 //                      return item
 //                  })
 // console.log(userInfo)
+
+
 
 //Filter
 // const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -29,7 +33,6 @@
 //     if (num > 4) newNums.push(num);
 // })
 // console.log(newNums)
-
 
 
 // const books = [
@@ -55,7 +58,6 @@
 
 
 //Map
-
 // const Nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const myNums1 = Nums.map((num) => num + 1)
@@ -67,7 +69,6 @@
 
 
 //Reduce
-
 // const Nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const Total1 = Nums.reduce(function (acc, currval) {
@@ -78,7 +79,6 @@
 
 // const Total2 = Nums.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 // console.log(Total2)
-
 
 
 // const shoppingCart = [

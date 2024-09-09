@@ -1,4 +1,4 @@
-// node 01-variables.js
+// node 01-basics/01-variables.js
 
 const accountId = 144553
 console.log(accountId)

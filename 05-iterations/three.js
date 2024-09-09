@@ -1,10 +1,19 @@
-//node 05-iterations\three
+// node 05-iterations\three
 
 //For of
 
 // const arr = [11, 12, 13, 14, 15]
+
 // for (const i of arr) {
 //     console.log(i)
+// }
+
+// for (const i in arr) {
+//     console.log(i)
+// }
+
+// for (const i in arr) {
+//     console.log(arr[i])
 // }
 
 

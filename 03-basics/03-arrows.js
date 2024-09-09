@@ -1,4 +1,4 @@
-// node 03-arrows.js
+// node 03-basics/03-arrows.js
 
 const user = {
     username: "hitesh",
@@ -30,11 +30,10 @@ const user = {
 //     console.log(this.username);
 // }
 
-// const chai =  () => {
+// const chai = () => {
 //     let username = "hitesh"
 //     console.log(this);
 // }
-
 
 // chai()
 
@@ -49,10 +48,8 @@ const user = {
 
 // const addTwo = (num1, num2) => ({username: "hitesh"})
 
-
 // console.log(addTwo(3, 4))
 
 
 // const myArray = [2, 5, 3, 7, 8]
-
-// myArray.forEach()
+// myArray.forEach(e => console.log(e))
